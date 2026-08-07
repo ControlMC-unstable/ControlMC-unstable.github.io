@@ -827,11 +827,6 @@
         "icon": "games/bobrob/icon.png"
     },
     {
-        "name": "Grindcraft",
-        "path": "test/grindcraft/index.html",
-        "icon": "test/grindcraft/icon.png"
-    },
-    {
         "name": "1v1 Space",
         "path": "games/1v1space/index.html",
         "icon": "games/1v1space/splash.png"
@@ -885,11 +880,6 @@
         "name": "Craftmine",
         "path": "games/craftmine/index.html",
         "icon": "games/craftmine/images/craftmine.png"
-    },
-    {
-        "name": "Deal or no deal",
-        "path": "test/deal-or-no-deal/index.html",
-        "icon": "test/deal-or-no-deal/index.jpg"
     },
     {
         "name": "Don't Drop the White Ball 2",
@@ -1202,14 +1192,4 @@
         "path": "games/vex/v2.html",
         "icon": "games/vex/icon2.png"
     },
-    {
-        "name": "Balatro",
-        "path": "test/balatro/main.html",
-        "icon": "test/balatro/icon.png"
-    },
-    {
-        "name": "Getting Over It (Real)",
-        "path": "test/getting-over-it-real/index.html",
-        "icon": "test/getting-over-it-real/icon.png"
-    }
 ]
