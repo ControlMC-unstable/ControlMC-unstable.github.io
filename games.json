@@ -1,0 +1,1215 @@
+[
+    {
+        "name": "Snow Rider",
+        "path": "games/snow_rider/snow_rider.html",
+        "icon": "games/snow_rider/snow-rider-3d.png"
+    },
+    {
+        "name": "Ragdoll Archers",
+        "path": "games/ragdoll/archers/ragdoll_archers.html",
+        "icon": "games/ragdoll/archers/icon.png"
+    },
+    {
+        "name": "1v1.lol",
+        "path": "games/1v1_lol/1v1_lol.html",
+        "icon": "games/1v1_lol/logo.png"
+    },
+    {
+        "name": "Gunspin",
+        "path": "games/gunspin/clgun-spin.html",
+        "icon": "games/gunspin/gunspin-logo.png"
+    },
+    {
+        "name": "2048",
+        "path": "games/2048/cl2048.html",
+        "icon": "games/2048/unnamed.png"
+    },
+    {
+        "name": "PolyTrack",
+        "path": "games/poly_track/clpolytrackworksnow.html",
+        "icon": "games/poly_track/polytrack-min.jpg"
+    },
+    {
+        "name": "Monkey Mart",
+        "path": "games/monkey_mart/monkey_mart.html",
+        "icon": "games/monkey_mart/monkey.png"
+    },
+    {
+        "name": "Level Devil",
+        "path": "games/level_devil/clleveldevil.html",
+        "icon": "games/level_devil/icon.png",
+        "tags": ["multiplayer"]
+    },
+    {
+        "name": "Basket Random",
+        "path": "games/basket_random/index.html",
+        "icon": "games/basket_random/icon.png",
+        "tags": ["multiplayer"]
+    },
+    {
+        "name": "Drive Mad",
+        "path": "games/drive_mad/cldrivemady.html",
+        "icon": "games/drive_mad/poki-drive-mad-icon-filled-256.png"
+    },
+    {
+        "name": "Survival Race",
+        "path": "games/survival_race/game.html",
+        "icon": "games/survival_race/icon.png"
+    },
+    {
+        "name": "Slope",
+        "path": "games/slope/one/index.html",
+        "icon": "games/slope/one/slope.png"
+    },
+    {
+        "name": "Slope 2 Player",
+        "path": "games/slope/slope2p.html",
+        "icon": "games/slope/icon2.png",
+        "tags": ["multiplayer"]
+    },
+    {
+        "name": "Slope 3",
+        "path": "games/slope/slope3.html",
+        "icon": "games/slope/icon3.png"
+    },
+    {
+        "name": "Doge Miner",
+        "path": "games/doge_miner/dogeminer.html",
+        "icon": "games/doge_miner/icon.png"
+    },
+    {
+        "name": "Escape Road",
+        "path": "games/escape_road/escaperoad.html",
+        "icon": "games/escape_road/icon.png"
+    },
+    {
+        "name": "Block Blast",
+        "path": "games/blockblast/clblockblast.html",
+        "icon": "games/blockblast/e.png"
+    },
+    {
+        "name": "Geo Lite (little long to load)",
+        "path": "games/geometry_dash/lite/lite.html",
+        "icon": "games/geometry_dash/lite/icon.png"
+    },
+    {
+        "name": "Getaway Shootout",
+        "path": "games/getaway_shootout/clgetawayshootout.html",
+        "icon": "games/getaway_shootout/logo.png",
+        "tags": ["multiplayer", "shooter"]
+    },
+    {
+        "name": "Geo Subzero",
+        "path": "games/geometry_dash/subzero/subzero.html",
+        "icon": "games/geometry_dash/subzero/icon.png"
+    },
+    {
+        "name": "Cookie Clicker",
+        "path": "games/clicker/cookie_clicker/clcookie-clicker.html",
+        "icon": "games/clicker/cookie_clicker/icon.png"
+    },
+    {
+        "name": "Drift Boss",
+        "path": "games/drift_boss/cldriftboss.html",
+        "icon": "games/drift_boss/icon.png"
+    },
+    {
+        "name": "Time Shooter 2",
+        "path": "games/time_shooter/cltimeshooter2.html",
+        "icon": "games/time_shooter/ts2.png"
+    },
+    {
+        "name": "Time Shooter 3",
+        "path": "games/time_shooter/cltimeshooter3.html",
+        "icon": "games/time_shooter/ts3.png"
+    },
+    {
+        "name": "A Dance of Fire and Ice",
+        "path": "games/fireandice/fireandice.html",
+        "icon": "games/fireandice/icon.png"
+    },
+    {
+        "name": "Stacktris",
+        "path": "games/stacktris/clstacktris.html",
+        "icon": "games/stacktris/icon.png"
+    },
+    {
+        "name": "Tiny Fishing",
+        "path": "games/tiny_fishing/index.html",
+        "icon": "games/tiny_fishing/tiny-fishing.jpg"
+    },
+    {
+        "name": "Tomb of the Mask",
+        "path": "games/totm/cltotm.html",
+        "icon": "games/totm/icon.png"
+    },
+    {
+        "name": "Happy Wheels",
+        "path": "games/happy_wheels/clhappywheels.html",
+        "icon": "games/happy_wheels/happy-wheels.jpg"
+    },
+    {
+        "name": "Little Alchemy",
+        "path": "games/little_alchemy/cllittlealchemy2.html",
+        "icon": "games/little_alchemy/unnamed.png"
+    },
+    {
+        "name": "Ragdoll Drop",
+        "path": "games/ragdoll/drop/clragdolldrop.html",
+        "icon": "games/ragdoll/drop/icon.png"
+    },
+    {
+        "name": "Ragdoll Hit",
+        "path": "games/ragdoll/hit/clragollhit.html",
+        "icon": "games/ragdoll/hit/icon.png"
+    },
+    {
+        "name": "OvO",
+        "path": "games/ovo/clovofixed.html",
+        "icon": "games/ovo/icon.png"
+    },
+    {
+        "name": "OvO 2",
+        "path": "games/ovo/clovo2.html",
+        "icon": "games/ovo/icon2.png"
+    },
+    {
+        "name": "OvO Dimensions",
+        "path": "games/ovo/clovodimensions.html",
+        "icon": "games/ovo/iconD.png"
+    },
+    {
+        "name": "Basket Stars",
+        "path": "games/basketstars/stars.html",
+        "icon": "games/basketstars/icon.png"
+    },
+    {
+        "name": "Cluster Rush",
+        "path": "games/clusterrush/rush.html",
+        "icon": "games/clusterrush/image.png"
+    },
+    {
+        "name": "Capybara Clicker",
+        "path": "games/clicker/capybara_clicker/clcapybaraclicker.html",
+        "icon": "games/clicker/capybara_clicker/icon.png"
+    },
+    {
+        "name": "Coreball",
+        "path": "games/coreball/coreball.html",
+        "icon": "games/coreball/icon.png"
+    },
+    {
+        "name": "Cell Machine",
+        "path": "games/cell_machine/clcellmachine.html",
+        "icon": "games/cell_machine/icon.png"
+    },
+    {
+        "name": "Choppy Orc",
+        "path": "games/choppy_orc/index.html",
+        "icon": "games/choppy_orc/icon.png"
+    },
+    {
+        "name": "Crossy Road",
+        "path": "games/crossy_road/clcrossyroad.html",
+        "icon": "games/crossy_road/icon.png"
+    },
+    {
+        "name": "CSGO Clicker",
+        "path": "games/clicker/csgo_clicker/clcsgoclicker.html",
+        "icon": "games/clicker/csgo_clicker/icon.png"
+    },
+    {
+        "name": "Cut The Rope",
+        "path": "games/cut_the_rope/clcuttherope.html",
+        "icon": "games/cut_the_rope/icon1.png"
+    },
+    {
+        "name": "Doodle Jump",
+        "path": "games/doodle_jump/index.html",
+        "icon": "games/doodle_jump/icon.png"
+    },
+    {
+        "name": "Eggy Car",
+        "path": "games/eggy_car/cleggycar.html",
+        "icon": "games/eggy_car/icon.png"
+    },
+    {
+        "name": "Final Earth 2",
+        "path": "games/final_earth/clfinalearth2.html",
+        "icon": "games/final_earth/icon.png"
+    },
+    {
+        "name": "Free Rider",
+        "path": "games/free_rider/fr1.html",
+        "icon": "games/free_rider/fr1.png"
+    },
+    {
+        "name": "Free Rider 2",
+        "path": "games/free_rider/fr2.html",
+        "icon": "games/free_rider/fr2.png"
+    },
+    {
+        "name": "Gun Mayhem",
+        "path": "games/gun_mayhem/clgunmayhem.html",
+        "icon": "games/gun_mayhem/icon1.png",
+        "tags": ["multiplayer"]
+    },
+    {
+        "name": "Gun Mayhem 2",
+        "path": "games/gun_mayhem/clgunmayhem2goof.html",
+        "icon": "games/gun_mayhem/icon2.png",
+        "tags": ["multiplayer"]
+    },
+    {
+        "name": "Gun Mayhem Redux",
+        "path": "games/gun_mayhem/redux/index.html",
+        "icon": "games/gun_mayhem/redux/icon.png",
+        "tags": ["multiplayer"]
+    },
+    {
+        "name": "Pixel Shooter",
+        "path": "games/pixel_shooter/clpixelshooter.html",
+        "icon": "games/pixel_shooter/icon.png"
+    },
+    {
+        "name": "Planet Life",
+        "path": "games/planet_life/clplanetlife.html",
+        "icon": "games/planet_life/icon.png"
+    },
+    {
+        "name": "Retro Bowl",
+        "path": "games/retro_bowl/rb.html",
+        "icon": "games/retro_bowl/icon.png"
+    },
+    {
+        "name": "Retro Bowl College",
+        "path": "games/retro_bowl/college.html",
+        "icon": "games/retro_bowl/college.png"
+    },
+    {
+        "name": "Retro Ping Pong",
+        "path": "games/retro_ping_pong/game.html",
+        "icon": "games/retro_ping_pong/icon.png",
+        "tags": ["multiplayer"]
+    },
+    {
+        "name": "Eaglercraft",
+        "path": "games/mc/eaglercraft/v1_8_offline.html",
+        "icon": "games/mc/eaglercraft/icon1.png"
+    },
+    {
+        "name": "2D Rocket League",
+        "path": "games/rocket_league/clrocketleague.html",
+        "icon": "games/rocket_league/e.png",
+        "tags": ["multiplayer"]
+    },
+    {
+        "name": "Rocket Soccer Derby",
+        "path": "games/rocket_league/clrocketsoccerderby.html",
+        "icon": "games/rocket_league/derby.png"
+    },
+    {
+        "name": "Rooftop Snipers",
+        "path": "games/rooftop_snipers/clrooftopsnipers.html",
+        "icon": "games/rooftop_snipers/icon1.png",
+        "tags": ["multiplayer"]
+    },
+    {
+        "name": "Rooftop Snipers 2",
+        "path": "games/rooftop_snipers/clrooftopsnipers2.html",
+        "icon": "games/rooftop_snipers/icon2.png",
+        "tags": ["multiplayer"]
+    },
+    {
+        "name": "99 Nights in the Forest",
+        "path": "games/roblox/99nf/cl99nightsitf.html",
+        "icon": "games/roblox/99nf/icon.png"
+    },
+    {
+        "name": "Grow A Garden",
+        "path": "games/roblox/gag/gag.html",
+        "icon": "games/roblox/gag/icon.png"
+    },
+    {
+        "name": "Steal A Brainrot",
+        "path": "games/roblox/sab/clbrainrot.html",
+        "icon": "games/roblox/sab/icon.png"
+    },
+    {
+        "name": "Snowboard Obby",
+        "path": "games/roblox/snowboard/clsnowboardobby.html",
+        "icon": "games/roblox/snowboard/icon.png"
+    },
+    {
+        "name": "Tung Tung Tung Sahur Obby",
+        "path": "games/roblox/ttt_obby/ttt.html",
+        "icon": "games/roblox/ttt_obby/icon.png"
+    },
+    {
+        "name": "Jailbreak Obby",
+        "path": "games/roblox/jailbreak_obby/jbo.html",
+        "icon": "games/roblox/jailbreak_obby/icon.png"
+    },
+    {
+        "name": "Johnny Trigger",
+        "path": "games/johnny_trigger/cljohnnytrigger.html",
+        "icon": "games/johnny_trigger/icon.png"
+    },
+    {
+        "name": "JustFall.lol",
+        "path": "games/justfall_lol/cljustfalllol.html",
+        "icon": "games/justfall_lol/icon.png"
+    },
+    {
+        "name": "Bowmasters",
+        "path": "games/bowmasters/clbowmaster.html",
+        "icon": "games/bowmasters/icon.png"
+    },
+    {
+        "name": "Brawlstars",
+        "path": "games/brawlstars/clBrawlstars.html",
+        "icon": "games/brawlstars/icon.png"
+    },
+    {
+        "name": "BuildNow.GG",
+        "path": "games/buildnow_gg/clbuildnowgg.html",
+        "icon": "games/buildnow_gg/icon.png"
+    },
+    {
+        "name": "Death Run 3D",
+        "path": "games/death_run/index.html",
+        "icon": "games/death_run/icon.png"
+    },
+    {
+        "name": "Driven Wild",
+        "path": "games/driven_wild/cldrivenwild.html",
+        "icon": "games/driven_wild/icon.png"
+    },
+    {
+        "name": "Elytra Flight",
+        "path": "games/mc/elytra_flight/clelytraflight.html",
+        "icon": "games/mc/elytra_flight/icon.png"
+    },
+    {
+        "name": "Fruit Ninja",
+        "path": "games/fruit_ninja/clfruitninja.html",
+        "icon": "games/fruit_ninja/icon.png"
+    },
+    {
+        "name": "Stickman Clash",
+        "path": "games/stickmanclash/clash.html",
+        "icon": "games/stickmanclash/icon.png",
+        "tags": ["multiplayer"]
+    },
+    {
+        "name": "Going Balls",
+        "path": "games/going_balls/clgoingballs.html",
+        "icon": "games/going_balls/icon.png"
+    },
+    {
+        "name": "Subway Surfers",
+        "path": "games/subwaysurf/subway.html",
+        "icon": "games/subwaysurf/icon.png"
+    },
+    {
+        "name": "Guess Their Answer",
+        "path": "games/guess_their_answer/clguesstheiranswer.html",
+        "icon": "games/guess_their_answer/icon.png"
+    },
+    {
+        "name": "Harvest.io",
+        "path": "games/harvest_io/clharvestio.html",
+        "icon": "games/harvest_io/icon.png"
+    },
+    {
+        "name": "Iron Snout",
+        "path": "games/iron_snot/iron.html",
+        "icon": "games/iron_snout/icon.png"
+    },
+    {
+        "name": "Helix Jump",
+        "path": "games/helix_jump/clhelixjump.html",
+        "icon": "games/helix_jump/icon.png"
+    },
+    {
+        "name": "Moto X3M",
+        "path": "games/motox3m/moto.html",
+        "icon": "games/motox3m/icon.png"
+    },
+    {
+        "name": "Moto X3M 2",
+        "path": "games/motox3m/moto2.html",
+        "icon": "games/motox3m/icon2.png"
+    },
+    {
+        "name": "Moto X3M 3",
+        "path": "games/motox3m/moto3.html",
+        "icon": "games/motox3m/icon3.png"
+    },
+    {
+        "name": "Moto X3M Winter",
+        "path": "games/motox3m/moto-winter.html",
+        "icon": "games/motox3m/icon-winter.png"
+    },
+    {
+        "name": "Moto X3M Spookyland",
+        "path": "games/motox3m/moto-spooky.html",
+        "icon": "games/motox3m/icon-spooky.png"
+    },
+    {
+        "name": "Hextris",
+        "path": "games/hextris/clhextris.html",
+        "icon": "games/hextris/icon.png"
+    },
+    {
+        "name": "Hole.io",
+        "path": "games/hole_io/clholeio.html",
+        "icon": "games/hole_io/icon.png"
+    },
+    {
+        "name": "Hypper Sandbox",
+        "path": "games/hyppersandbox/clhyppersandbox.html",
+        "icon": "games/hyppersandbox/icon.png"
+    },
+    {
+        "name": "Icey Purple Head",
+        "path": "games/icey_purple_head/clicypurplehead.html",
+        "icon": "games/icey_purple_head/icon.png"
+    },
+    {
+        "name": "Idle Breakout",
+        "path": "games/idle_breakout/clidlebreakout.html",
+        "icon": "games/idle_breakout/icon.png"
+    },
+    {
+        "name": "There is no game",
+        "path": "games/nogame/nogame.html",
+        "icon": "games/nogame/icon.png"
+    },
+    {
+        "name": "Infinite Craft",
+        "path": "games/infinitecraft/clinfinitecraft.html",
+        "icon": "games/infinitecraft/icon.png"
+    },
+    {
+        "name": "World's Hardest Game",
+        "path": "games/hardestgame/hardestgame.html",
+        "icon": "games/hardestgame/icon.png"
+    },
+    {
+        "name": "Madelin Stunt Cars 2",
+        "path": "games/madelin_stunt_cars/clmadstuntcars2.html",
+        "icon": "games/madelin_stunt_cars/icon.png"
+    },
+    {
+        "name": "Blackjack",
+        "path": "games/blackjack/blackjack.html",
+        "icon": "games/blackjack/icon.png"
+    },
+    {
+        "name": "Minecraft Parkour",
+        "path": "games/mc/mcparkour/clblockcraftparkour.html",
+        "icon": "games/mc/mcparkour/icon.png"
+    },
+    {
+        "name": "Paper.io",
+        "path": "games/paperio/paperio.html",
+        "icon": "games/paperio/icon1.png"
+    },
+    {
+        "name": "1",
+        "path": "games/1/1.html",
+        "icon": "games/1/icon.png"
+    },
+    {
+        "name": "Parking Fury",
+        "path": "games/parking_fury/pf1.html",
+        "icon": "games/parking_fury/icon1.png"
+    },
+    {
+        "name": "Parking Fury 2",
+        "path": "games/parking_fury/pf2.html",
+        "icon": "games/parking_fury/icon2.png"
+    },
+    {
+        "name": "Parking Fury 3",
+        "path": "games/parking_fury/pf3.html",
+        "icon": "games/parking_fury/icon3.png"
+    },
+    {
+        "name": "Sausage Flip",
+        "path": "games/sausageflip/sf.html",
+        "icon": "games/sausageflip/icon.png"
+    },
+    {
+        "name": "10 Minutes till Dawn",
+        "path": "games/10minutes/10minutes.html",
+        "icon": "games/10minutes/icon.png"
+    },
+    {
+        "name": "Skyrace",
+        "path": "games/skyrace/clskyrace-3d.html",
+        "icon": "games/skyrace/icon.png"
+    },
+    {
+        "name": "1 on 1 Soccer",
+        "path": "games/1on1soccer/soccer.html",
+        "icon": "games/1on1soccer/icon.png"
+    },
+    {
+        "name": "Slither.io",
+        "path": "games/slitherio/clslitherio.html",
+        "icon": "games/slitherio/icon.png"
+    },
+    {
+        "name": "60 Second Burger Run",
+        "path": "games/60second/burgerrun.html",
+        "icon": "games/60second/icon.png"
+    },
+    {
+        "name": "9007199254740992",
+        "path": "games/9007/9007.html",
+        "icon": "games/9007/icon.png"
+    },
+    {
+        "name": "Snowball.io",
+        "path": "games/snowballio/clsnowballio.html",
+        "icon": "games/snowballio/icon.png"
+    },
+    {
+        "name": "State.io",
+        "path": "games/stateio/clstateio.html",
+        "icon": "games/stateio/icon.png"
+    },
+    {
+        "name": "Summer Rider 3D",
+        "path": "games/summerrider3d/clsummerrider.html",
+        "icon": "games/summerrider3d/icon.png"
+    },
+    {
+        "name": "Stealth Master",
+        "path": "games/stealthmaster/clstealthmaster.html",
+        "icon": "games/stealthmaster/icon.png"
+    },
+    {
+        "name": "Achievement Unlocked",
+        "path": "games/achievement_unlocked/achieve1.html",
+        "icon": "games/achievement_unlocked/icon1.png"
+    },
+    {
+        "name": "Achievement Unlocked 2",
+        "path": "games/achievement_unlocked/achieve2.html",
+        "icon": "games/achievement_unlocked/icon2.png"
+    },
+    {
+        "name": "Achievement Unlocked 3",
+        "path": "games/achievement_unlocked/achieve3.html",
+        "icon": "games/achievement_unlocked/icon3.png"
+    },
+    {
+        "name": "Stickman Hook",
+        "path": "games/stickmanhook/clstickmanhook.html",
+        "icon": "games/stickmanhook/icon.png"
+    },
+    {
+        "name": "A Dark Room",
+        "path": "games/darkroom/darkroom.html",
+        "icon": "games/darkroom/icon.png"
+    },
+    {
+        "name": "Stick Merge",
+        "path": "games/stickmerge/sm.html",
+        "icon": "games/stickmerge/icon.png"
+    },
+    {
+        "name": "Adventure Capatalist",
+        "path": "games/adventurecap/cap.html",
+        "icon": "games/adventurecap/icon.png"
+    },
+    {
+        "name": "Super Car Rush",
+        "path": "games/supercarrush/cr.html",
+        "icon": "games/supercarrush/icon.png"
+    },
+    {
+        "name": "Superhot",
+        "path": "games/superhot/sh.html",
+        "icon": "games/superhot/icon.png"
+    },
+    {
+        "name": "Swordfight",
+        "path": "games/swordfight/clswordfight.html",
+        "icon": "games/swordfight/icon.png"
+    },
+    {
+        "name": "Tall.io",
+        "path": "games/tallio/cltallio.html",
+        "icon": "games/tallio/icon.png"
+    },
+    {
+        "name": "Territorial.io",
+        "path": "games/territorialio/clterritorialio.html",
+        "icon": "games/territorialio/icon.png"
+    },
+    {
+        "name": "Age of War",
+        "path": "games/ageofwar/age1.html",
+        "icon": "games/ageofwar/icon1.png"
+    },
+    {
+        "name": "Age of War 2",
+        "path": "games/ageofwar/age2.html",
+        "icon": "games/ageofwar/icon2.png"
+    },
+    {
+        "name": "Tower Blocks",
+        "path": "games/towerblocks/cltowerblocks.html",
+        "icon": "games/towerblocks/icon.png"
+    },
+    {
+        "name": "Tower Crash 3D",
+        "path": "games/towercrash3d/cltowercrash3d.html",
+        "icon": "games/towercrash3d/icon.png"
+    },
+    {
+        "name": "Traffic Jam 3D",
+        "path": "games/trafficjam3d/cltrafficjam3d.html",
+        "icon": "games/trafficjam3d/icon.png"
+    },
+    {
+        "name": "Tunnel Rush",
+        "path": "games/tunnelrush/tr.html",
+        "icon": "games/tunnelrush/icon.png"
+    },
+    {
+        "name": "Archery World Tour",
+        "path": "games/archery/worldarch.html",
+        "icon": "games/archery/icon.png"
+    },
+    {
+        "name": "Ultimate Car Driving Simulator",
+        "path": "games/drivingsim/ult1.html",
+        "icon": "games/drivingsim/icon1.png"
+    },
+    {
+        "name": "Ultrakill",
+        "path": "games/ultrakill/uk.html",
+        "icon": "games/ultrakill/icon.png"
+    },
+    {
+        "name": "A Small World Cup",
+        "path": "games/smallcup/small.html",
+        "icon": "games/smallcup/icon.png"
+    },
+    {
+        "name": "Unicycle Hero",
+        "path": "games/unicyclehero/uh.html",
+        "icon": "games/unicyclehero/icon.png"
+    },
+    {
+        "name": "Awesome Tanks",
+        "path": "games/awesometanks/tanks1.html",
+        "icon": "games/awesometanks/icon1.png"
+    },
+    {
+        "name": "Awesome Tanks 2",
+        "path": "games/awesometanks/tanks2.html",
+        "icon": "games/awesometanks/icon2.png"
+    },    
+    {
+        "name": "Uno",
+        "path": "games/uno/cluno.html",
+        "icon": "games/uno/icon.png"
+    },
+    {
+        "name": "Bad Ice Cream",
+        "path": "games/badicecream/bad1.html",
+        "icon": "games/badicecream/icon1.png"
+    },
+    {
+        "name": "Bad Ice Cream 2",
+        "path": "games/badicecream/bad2.html",
+        "icon": "games/badicecream/icon2.png"
+    },
+    {
+        "name": "Bad Ice Cream 3",
+        "path": "games/badicecream/bad3.html",
+        "icon": "games/badicecream/icon3.png"
+    },
+    {
+        "name": "Vex 3",
+        "path": "games/vex/v3.html",
+        "icon": "games/vex/icon3.png"
+    },
+    {
+        "name": "Vex 4",
+        "path": "games/vex/v4.html",
+        "icon": "games/vex/icon4.png"
+    },
+    {
+        "name": "Vex 6",
+        "path": "games/vex/v6.html",
+        "icon": "games/vex/icon6.png"
+    },
+    {
+        "name": "Vex 7",
+        "path": "games/vex/v7.html",
+        "icon": "games/vex/icon7.png"
+    },
+    {
+        "name": "Vex X3M",
+        "path": "games/vex/v-x3m.html",
+        "icon": "games/vex/icon-x3m.png"
+    },
+    {
+        "name": "Vex X3M 2",
+        "path": "games/vex/v-x3m2.html",
+        "icon": "games/vex/icon-x3m2.png"
+    },
+    {
+        "name": "Volleyball Challenge",
+        "path": "games/volleyballchallenge/vbc.html",
+        "icon": "games/volleyballchallenge/icon.png"
+    },
+    {
+        "name": "Volley Random",
+        "path": "games/volleyrandom/vr.html",
+        "icon": "games/volleyrandom/icon.png"
+    },
+    {
+        "name": "Vortex",
+        "path": "games/vortex/v.html",
+        "icon": "games/vortex/icon.png"
+    },
+    {
+        "name": "Wave Dash",
+        "path": "games/geometry_dash/wd1.html",
+        "icon": "games/geometry_dash/icon1.png"
+    },
+    {
+        "name": "Wrestle Bros",
+        "path": "games/wrestlebros/wb.html",
+        "icon": "games/wrestlebros/icon.png"
+    },
+    {
+        "name": "Yohoho.io",
+        "path": "games/yohohoio/yo.html",
+        "icon": "games/yohohoio/icon.png"
+    },
+    {
+        "name": "Undertale",
+        "path": "games/undertale/undertale.html",
+        "icon": "games/undertale/icon.png"
+    },
+    {
+        "name": "Baldi's Basics",
+        "path": "games/baldis/baldis.html",
+        "icon": "games/baldis/icon.png"
+    },
+    {
+        "name": "Bee Swarm Simulator",
+        "path": "games/beeswarm/bee.html",
+        "icon": "games/beeswarm/icon.png"
+    },
+    {
+        "name": "Big Tower Tiny Square",
+        "path": "games/bigtower/tower1.html",
+        "icon": "games/bigtower/icon1.png"
+    },
+    {
+        "name": "Big Tower Tiny Square 2",
+        "path": "games/bigtower/tower2.html",
+        "icon": "games/bigtower/icon2.png"
+    },
+    {
+        "name": "Bob the Robber right click then click fullscreen",
+        "path": "games/bobrob/rob.html",
+        "icon": "games/bobrob/icon.png"
+    },
+    {
+        "name": "Grindcraft",
+        "path": "test/grindcraft/index.html",
+        "icon": "test/grindcraft/icon.png"
+    },
+    {
+        "name": "1v1 Space",
+        "path": "games/1v1space/index.html",
+        "icon": "games/1v1space/splash.png"
+    },
+    {
+        "name": "Among Us",
+        "path": "games/among-us/index.html",
+        "icon": "games/among-us/red.png"
+    },
+    {
+        "name": "Angry Birds",
+        "path": "games/angry-birds/index.html",
+        "icon": "games/angry-birds/icon.png"
+    },
+    {
+        "name": "Basketball.io",
+        "path": "games/basketball-io/index.html",
+        "icon": "games/basketball-io/icon.jfif"
+    },
+    {
+        "name": "Black Hole Square",
+        "path": "games/blackholesquare/index.html",
+        "icon": "games/blackholesquare/icon.png"
+    },
+    {
+        "name": "Blocky Snake",
+        "path": "games/blocky-snakes/index.html",
+        "icon": "games/blocky-snakes/icon.png"
+    },
+    {
+        "name": "Chrome Dino",
+        "path": "games/chromedino/index.html",
+        "icon": "games/chromedino/icon.png"
+    },
+    {
+        "name": "City Blocks 2",
+        "path": "games/city-blocks-2/index.html",
+        "icon": "games/city-blocks-2/icon.png"
+    },
+    {
+        "name": "Cleanup.io",
+        "path": "games/clean-up-io/index.html",
+        "icon": "games/clean-up-io/icon.png"
+    },
+    {
+        "name": "Color Switch 2 Challenges",
+        "path": "games/color-switch-2-challenges/index.html",
+        "icon": "games/color-switch-2-challenges/icon.png"
+    },
+    {
+        "name": "Craftmine",
+        "path": "games/craftmine/index.html",
+        "icon": "games/craftmine/images/craftmine.png"
+    },
+    {
+        "name": "Deal or no deal",
+        "path": "test/deal-or-no-deal/index.html",
+        "icon": "test/deal-or-no-deal/index.jpg"
+    },
+    {
+        "name": "Don't Drop the White Ball 2",
+        "path": "games/dont-drop-the-white-ball-2/index.html",
+        "icon": "games/dont-drop-the-white-ball-2/icon.png"
+    },
+    {
+        "name": "Edge Not Found",
+        "path": "games/edgenotfound/index.html",
+        "icon": "games/edgenotfound/edge.png"
+    },
+    {
+        "name": "Flappybird",
+        "path": "games/flappybird/index.html",
+        "icon": "games/flappybird/icon.png"
+    },
+    {
+        "name": "Froggys Battle",
+        "path": "games/froggysbattle/index.html",
+        "icon": "games/froggysbattle/icon.jpg"
+    },
+    {
+        "name": "Getting Over It",
+        "path": "games/getting-over-it/index.html",
+        "icon": "games/getting-over-it/icon.png"
+    },
+    {
+        "name": "Golf",
+        "path": "games/golf/index.html",
+        "icon": "games/golf/icon.jpg"
+    },
+    {
+        "name": "Gravity Soccer",
+        "path": "games/gravity-soccer/index.html",
+        "icon": "games/gravity-soccer/icon.png"
+    },
+    {
+        "name": "Hacker Type",
+        "path": "games/hackertype/index.html",
+        "icon": "games/hackertype/icon.png"
+    },
+    {
+        "name": "House of Hazards",
+        "path": "games/house-of-hazards/index.html",
+        "icon": "games/house-of-hazards/thumbnail.jpg"
+    },
+    {
+        "name": "The Impossible Quiz",
+        "path": "games/impossiblequiz/index.html",
+        "icon": "games/impossiblequiz/impossiblequiz.png"
+    },
+    {
+        "name": "KartFight.io",
+        "path": "games/kart-fight-io/index.html",
+        "icon": "games/kart-fight-io/icon.jpg"
+    },
+    {
+        "name": "Krunker",
+        "path": "games/krunker/index.html",
+        "icon": "games/krunker/img/krunker-io.jpg"
+    },
+    {
+        "name": "OSU",
+        "path": "games/osu/index.html",
+        "icon": "games/osu/icon.png"
+    },
+    {
+        "name": "Blumgi Racers",
+        "path": "games/blumgi/racers.html",
+        "icon": "games/blumgi/icon.png"
+    },
+    {
+        "name": "Pacman",
+        "path": "games/pacman/index.html",
+        "icon": "games/pacman/icon.png"
+    },
+    {
+        "name": "Paper.io 2",
+        "path": "games/paperio2/index.html",
+        "icon": "games/paperio2/icon.png"
+    },
+    {
+        "name": "Papery Planes",
+        "path": "games/papery-planes/index.html",
+        "icon": "games/papery-planes/icon.png"
+    },
+    {
+        "name": "Breaklock",
+        "path": "games/breaklock/index.html",
+        "icon": "games/breaklock/assets/icons/ios-180x180.png"
+    },
+    {
+        "name": "Captain Callisto",
+        "path": "games/captaincallisto/index.html",
+        "icon": "There is no icon :("
+    },
+    {
+        "name": "Clicker Heros",
+        "path": "games/clickerheroes/index.html",
+        "icon": "games/clickerheroes/clicker-heroes.png"
+    },
+    {
+        "name": "Run 3",
+        "path": "games/run/run3.html",
+        "icon": "games/run/icon3.png"
+    },
+    {
+        "name": "Bloons Tower Defense 4",
+        "path": "games/btd4/btd4.html",
+        "icon": "games/btd4/icon.png"
+    },
+    {
+        "name": "Pokemon Emerald",
+        "path": "games/pokemon/emerald/index.html",
+        "icon": "games/pokemon/emerald/icon.png"
+    },
+    {
+        "name": "1v1 Tennis",
+        "path": "games/1v1tennis/index.html",
+        "icon": "games/1v1tennis/icon.png"
+    },
+    {
+        "name": "Airline Tycoon Idle",
+        "path": "games/airline_tycoon_idle/index.html",
+        "icon": "games/airline_tycoon_idle/icon.png"
+    },
+    {
+        "name": "Aquapark.io",
+        "path": "games/aquapark-io/index.html",
+        "icon": "games/aquapark-io/icon.png"
+    },
+    {
+        "name": "Bacon May Die",
+        "path": "games/bacon-may-die/index.html",
+        "icon": "games/bacon-may-die/icon.png"
+    },
+    {
+        "name": "Bad Bodyguards",
+        "path": "games/bad-bodyguards/index.html",
+        "icon": "games/bad-bodyguards/icon.png"
+    },
+    {
+        "name": "Ballistic",
+        "path": "games/ballistic/index.html",
+        "icon": "games/ballistic/icon.png"
+    },
+    {
+        "name": "Battle Karts",
+        "path": "games/battle-karts/index.html",
+        "icon": "games/battle-karts/icon.png"
+    },
+    {
+        "name": "Bounce Masters",
+        "path": "games/bounce-masters/index.html",
+        "icon": "games/bounce-masters/icon.png"
+    },
+    {
+        "name": "Bounce Back",
+        "path": "games/bounce-back/index.html",
+        "icon": "games/bounce-back/icon.png"
+    },
+    {
+        "name": "Bouncy Motors",
+        "path": "games/bouncy-motors/index.html",
+        "icon": "games/bouncy-motors/icon.png"
+    },
+    {
+        "name": "Brawl Simulator 3D",
+        "path": "games/brawl-simulator-3d/index.html",
+        "icon": "games/brawl-simulator-3d/icon.png"
+    },
+    {
+        "name": "Brotato",
+        "path": "games/brotato/index.html",
+        "icon": "games/brotato/icon.png"
+    },
+    {
+        "name": "Buster Jam",
+        "path": "games/buster-jam/index.html",
+        "icon": "games/buster-jam/icon.png"
+    },
+    {
+        "name": "Cannon Balls 3D",
+        "path": "games/cannon-balls-3d/index.html",
+        "icon": "games/cannon-balls-3d/icon.png"
+    },
+    {
+        "name": "Car Drawing",
+        "path": "games/car-drawing/index.html",
+        "icon": "games/car-drawing/icon.png"
+    },
+    {
+        "name": "Circloo 2",
+        "path": "games/circloo2/index.html",
+        "icon": "games/circloo2/icon.png"
+    },
+    {
+        "name": "Learn To Fly",
+        "path": "games/learn-to-fly/index1.html",
+        "icon": "games/learn-to-fly/icon1.png"
+    },
+    {
+        "name": "Learn To Fly 2",
+        "path": "games/learn-to-fly/index2.html",
+        "icon": "games/learn-to-fly/icon2.png"
+    },
+    {
+        "name": "Learn To Fly 3",
+        "path": "games/learn-to-fly/index3.html",
+        "icon": "games/learn-to-fly/icon3.png"
+    },
+    {
+        "name": "BTD6 (Scratch Edition)",
+        "path": "games/btd6/index.html",
+        "icon": "games/btd6/icon.png"
+    },
+    {
+        "name": "TAG",
+        "path": "games/tag/index.html",
+        "icon": "games/tag/icon.png",
+        "tags": ["multiplayer"]
+    },
+    {
+        "name": "Survivor.io",
+        "path": "games/survivor-io/index.html",
+        "icon": "games/survivor-io/icon.png"
+    },
+    {
+        "name": "Granny",
+        "path": "games/granny/index1.html",
+        "icon": "games/granny/icon1.png"
+    },
+    {
+        "name": "Granny II",
+        "path": "games/granny/index2.html",
+        "icon": "games/granny/icon2.png"
+    },
+    {
+        "name": "Granny III",
+        "path": "games/granny/index3.html",
+        "icon": "games/granny/icon3.png"
+    },
+    {
+        "name": "Karlson",
+        "path": "games/karlson/index.html",
+        "icon": "games/karlson/icon.png"
+    },
+    {
+        "name": "Hollow Knight",
+        "path": "games/hollow-knight/hollow-knight.html",
+        "icon": "games/hollow-knight/icon.png"
+    },
+    {
+        "name": "Recoil",
+        "path": "games/recoil/index.html",
+        "icon": "games/recoil/icon.png"
+    },
+    {
+        "name": "Money Rush",
+        "path": "games/money-rush/index.html",
+        "icon": "games/money-rush/icon.png"
+    },
+    {
+        "name": "Baseball Bros",
+        "path": "games/baseball-bros/index.html",
+        "icon": "games/baseball-bros/icon.png"
+    },
+    {
+        "name": "Bloxorz",
+        "path": "games/bloxorz/index.html",
+        "icon": "games/bloxorz/icon.png"
+    },
+    {
+        "name": "Boxing Random",
+        "path": "games/boxing-random/index.html",
+        "icon": "games/boxing-random/icon.png"
+    },
+    {
+        "name": "Flappy Dunk",
+        "path": "games/flappy-dunk/index.html",
+        "icon": "games/flappy-dunk/icon.png"
+    },
+    {
+        "name": "Football Bros",
+        "path": "games/football-bros/index.html",
+        "icon": "games/football-bros/icon.png"
+    },
+    {
+        "name": "Iron Lung",
+        "path": "games/iron-lung/index.html",
+        "icon": "games/iron-lung/icon.png"
+    },
+    {
+        "name": "Jetpack Joyride",
+        "path": "games/jetpack-joyride/index.html",
+        "icon": "games/jetpack-joyride/icon.png"
+    },
+    {
+        "name": "Plinko",
+        "path": "games/plinko/index.html",
+        "icon": "games/plinko/icon.png"
+    },
+    {
+        "name": "Vex 1",
+        "path": "games/vex/v1.html",
+        "icon": "games/vex/icon1.png"
+    },
+    {
+        "name": "Vex 2",
+        "path": "games/vex/v2.html",
+        "icon": "games/vex/icon2.png"
+    },
+    {
+        "name": "Balatro",
+        "path": "test/balatro/main.html",
+        "icon": "test/balatro/icon.png"
+    },
+    {
+        "name": "Getting Over It (Real)",
+        "path": "test/getting-over-it-real/index.html",
+        "icon": "test/getting-over-it-real/icon.png"
+    }
+]

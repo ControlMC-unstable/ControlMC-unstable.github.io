@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Hotdog Party</title>
+<meta name="description" content="Get in touch with the Hotdog Party team." />
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  .info-grid {
+    display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    max-width:760px; margin:0 auto;
+    gap:clamp(1rem,2vw,1.5rem);
+  }
+  .info {
+    padding:1.8rem 1.6rem;
+    border:1px solid var(--line); border-radius:18px;
+    background:linear-gradient(160deg, rgba(255,255,255,.05), rgba(255,255,255,.015));
+    backdrop-filter:blur(10px);
+    transition:border-color .28s, transform .28s;
+  }
+  .info:hover { border-color:color-mix(in srgb, var(--accent) 45%, transparent); transform:translateY(-4px); }
+  .info .ico {
+    display:grid; place-items:center; width:48px; height:48px; margin-bottom:1.1rem;
+    border-radius:13px; font-size:1.4rem;
+    background:color-mix(in srgb, var(--accent) 14%, transparent);
+    border:1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  }
+  .info h3 {
+    font-size:.72rem; letter-spacing:.24em; text-transform:uppercase;
+    color:var(--dim); font-weight:700; margin-bottom:.6rem;
+  }
+  .info .val { font-size:1.05rem; font-weight:700; margin-bottom:.4rem; word-break:break-word; }
+  .info .val a { color:var(--accent); text-decoration:none; }
+  .info .val a:hover { text-decoration:underline; }
+  .info p { font-size:.85rem; font-weight:300; color:var(--muted); line-height:1.6; }
+
+  .note {
+    margin-top:clamp(2rem,5vh,3rem);
+    padding:1.6rem 1.8rem;
+    border-left:2px solid var(--accent);
+    background:rgba(255,255,255,.03);
+    border-radius:0 14px 14px 0;
+  }
+  .note h3 { font-size:.95rem; font-weight:700; margin-bottom:.5rem; }
+  .note p { color:var(--muted); font-weight:300; line-height:1.75; font-size:.9rem; }
+
+</style>
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div class="vignette heavy"></div>
+
+<nav class="nav">
+  <a class="nav-logo" href="index.html">Hotdog Party</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="games.html">Games</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="page">
+  <header class="page-head">
+    <p class="eyebrow">Say Hello</p>
+    <h1 class="display">Contact</h1>
+    <p>Got a game idea, found a bug, or want your game featured on the site? Here's how to reach us.</p>
+  </header>
+
+  <div class="info-grid">
+    <div class="info">
+      <div class="ico">🐛</div>
+      <h3>Report a Bug</h3>
+      <div class="val"><a href="mailto:hello@hotdogparty.example?subject=Bug%20report">Send a bug report</a></div>
+      <p>Tell us which game, what happened, and what browser you were using.</p>
+    </div>
+
+    <div class="info">
+      <div class="ico">🎮</div>
+      <h3>Submit a Game</h3>
+      <div class="val"><a href="mailto:hello@hotdogparty.example?subject=Game%20submission">Pitch your game</a></div>
+      <p>Made something fun? Send us a link and we'll take a look at adding it to the arcade.</p>
+    </div>
+  </div>
+
+  <div class="note">
+    <h3>Before you write in</h3>
+    <p>Every game here runs in the browser, so most problems are fixed by refreshing the page or trying a different browser. If a game still won't load after that, send us the game's name and we'll get on it.</p>
+  </div>
+</main>
+
+<footer class="footer">
+  <span>© <span id="yr"></span> Hotdog Party</span>
+  <span><a href="index.html">Home</a> · <a href="games.html">Games</a> · <a href="contact.html">Contact</a></span>
+</footer>
+
+<script src="assets/hotdog.bundle.js"></script>
+<script>
+  window.mountHotdog({ canvas: document.getElementById('bg-canvas'), mode: 'ambient' });
+  document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
