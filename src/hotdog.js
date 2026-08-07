@@ -217,6 +217,14 @@ export function mountHotdog({
     baseZ = Math.min(21, Math.max(9.2, needed));
     camera.position.z = baseZ + zoom;
     HOTDOG_Y = ambientMode ? -1.15 : -(tall ? 0.46 : 0.56) * baseZ * Math.tan(HALF_FOV);
+
+    // On a short window there's less room under the wordmark, so shrink the
+    // hero hotdog and drop it lower instead of letting it ride over the copy.
+    if (!ambientMode) {
+      const room = Math.max(0.62, Math.min(1, innerHeight / 900));
+      hotdog.scale.setScalar(1.15 * room);
+      HOTDOG_Y *= (2 - room);
+    }
   }
   frame();
 

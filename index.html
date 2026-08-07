@@ -11,15 +11,103 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 <style>
+  /* ---------- header credit ---------- */
+  .nav-credit {
+    position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+    font-size:.66rem; font-weight:700; letter-spacing:.28em; text-transform:uppercase;
+    color:var(--dim); white-space:nowrap; pointer-events:none;
+    text-shadow:0 1px 8px rgba(0,0,0,.8);
+  }
+  .nav-credit b { color:var(--accent); font-weight:700; }
+  @media (max-width:900px){ .nav-credit { display:none; } }
+
+  /* ---------- hero ---------- */
   .hero {
-    position:fixed; inset:0; z-index:2;
+    position:fixed; inset:0; z-index:3;
     display:flex; flex-direction:column; align-items:center; justify-content:center;
     pointer-events:none; text-align:center;
-    padding-bottom:22vh;
+    padding-bottom:20vh;
   }
-  .hero h1 { font-size:clamp(3rem, 11vw, 9rem); }
-  .hero .lede { margin-top:1.4rem; }
-  .hero .btn  { margin-top:2.6rem; }
+  .hero h1 { font-size:clamp(3rem, 10vw, 8.5rem); }
+  .hero .lede { margin-top:1.3rem; }
+  .hero .btn  { margin-top:2.4rem; }
+
+  /* live stat chips under the button */
+  .stats {
+    margin-top:1.9rem; display:flex; gap:.55rem; flex-wrap:wrap; justify-content:center;
+    opacity:0; transform:translateY(6px); transition:opacity .6s .2s, transform .6s .2s;
+  }
+  .stats.in { opacity:1; transform:none; }
+  .stat {
+    padding:.42rem 1rem; border-radius:100px;
+    border:1px solid var(--line); background:rgba(20,20,20,.6);
+    backdrop-filter:blur(8px);
+    font-size:.66rem; font-weight:700; letter-spacing:.2em; text-transform:uppercase;
+    color:var(--muted);
+  }
+  .stat b { color:var(--accent); font-weight:900; }
+
+  /* ---------- scrolling logo columns down each edge ---------- */
+  .side {
+    position:fixed; top:0; bottom:0; z-index:2;
+    width:clamp(84px, 9vw, 132px);
+    overflow:hidden;
+    -webkit-mask-image:linear-gradient(transparent, #000 16%, #000 84%, transparent);
+            mask-image:linear-gradient(transparent, #000 16%, #000 84%, transparent);
+  }
+  .side.left  { left:0;  }
+  .side.right { right:0; }
+
+  /* a soft glow so the columns feel lit rather than pasted on */
+  .side::after {
+    content:''; position:absolute; inset:0; pointer-events:none;
+    background:linear-gradient(90deg, rgba(255,140,0,.07), transparent 70%);
+  }
+  .side.right::after { background:linear-gradient(270deg, rgba(255,140,0,.07), transparent 70%); }
+
+  .track {
+    display:flex; flex-direction:column; gap:.7rem;
+    padding:.7rem;
+    animation:roll 46s linear infinite;
+    will-change:transform;
+  }
+  .side.right .track { animation-direction:reverse; }
+  .side:hover .track { animation-play-state:paused; }
+
+  @keyframes roll {
+    from { transform:translateY(0); }
+    to   { transform:translateY(-50%); }
+  }
+
+  .chip {
+    position:relative; display:block; flex:none;
+    aspect-ratio:1; border-radius:14px; overflow:hidden;
+    border:1px solid rgba(255,255,255,.08);
+    background:#1b1b1b;
+    opacity:.42; filter:saturate(.7);
+    transition:opacity .3s, filter .3s, transform .3s, border-color .3s;
+    pointer-events:auto;
+  }
+  .chip:hover {
+    opacity:1; filter:none; transform:scale(1.09);
+    border-color:color-mix(in srgb, var(--accent) 70%, transparent);
+    box-shadow:0 10px 26px rgba(0,0,0,.6);
+  }
+  .chip img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  .chip .thumb-fallback { position:absolute; inset:0; display:grid; place-items:center;
+    font-weight:900; color:var(--dim); font-size:.8rem; }
+
+  /* vertical labels hugging the outer edges */
+  .edge-label {
+    position:fixed; top:50%; z-index:2;
+    font-size:.6rem; font-weight:700; letter-spacing:.42em; text-transform:uppercase;
+    color:rgba(255,255,255,.16); white-space:nowrap; pointer-events:none;
+  }
+  .edge-label.l { left:.55rem;  transform:translateY(-50%) rotate(180deg); writing-mode:vertical-rl; }
+  .edge-label.r { right:.55rem; transform:translateY(-50%); writing-mode:vertical-rl; }
+
+  @media (max-width:1100px){ .side, .edge-label { display:none; } }
+  @media (prefers-reduced-motion:reduce){ .track { animation:none; } }
 </style>
 </head>
 <body class="no-scroll">
@@ -27,8 +115,15 @@
 <canvas id="bg-canvas"></canvas>
 <div class="vignette"></div>
 
+<!-- scrolling game logos down both edges -->
+<aside class="side left"><div class="track" id="track-l"></div></aside>
+<aside class="side right"><div class="track" id="track-r"></div></aside>
+<span class="edge-label l">Now Playing</span>
+<span class="edge-label r">Now Playing</span>
+
 <nav class="nav">
   <a class="nav-logo" href="index.html">Hotdog Party</a>
+  <span class="nav-credit">Created by <b>NightDev</b> &amp; <b>ControlMC</b></span>
   <ul class="nav-links">
     <li><a href="index.html" class="active">Home</a></li>
     <li><a href="games.html">Games</a></li>
@@ -40,13 +135,60 @@
   <h1 class="display">Hotdog<br>Party</h1>
   <p class="lede">Welcome to the best game site</p>
   <a class="btn" href="games.html">Play Now</a>
+  <div class="stats" id="stats"></div>
 </div>
 
 <div class="hint">Drag to spin &nbsp;·&nbsp; Scroll to zoom</div>
 
+<script src="assets/gamedata.js"></script>
+<script src="assets/firebase-config.js"></script>
+<script src="assets/plays.bundle.js"></script>
 <script src="assets/hotdog.bundle.js"></script>
 <script>
+(function () {
   window.mountHotdog({ canvas: document.getElementById('bg-canvas'), mode: 'hero' });
+
+  function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+  window.GameData.load().then(function (games) {
+    if (!games.length) return;
+
+    /* ---- the two scrolling columns ---- */
+    // Two different slices of the list so the columns don't mirror each other.
+    // Rotating by an offset keeps every entry in a column unique.
+    function pick(offset, n) {
+      var out = [];
+      for (var i = 0; i < n && i < games.length; i++) {
+        out.push(games[(offset + i) % games.length]);
+      }
+      return out;
+    }
+    function column(list) {
+      var html = list.map(function (g) {
+        return '<a class="chip" href="game.html?g=' + encodeURIComponent(g.slug) + '" title="' + esc(g.title) + '">' +
+                 '<span class="thumb-fallback">' + esc(g.title.slice(0, 2).toUpperCase()) + '</span>' +
+                 (g.icon ? '<img src="' + esc(g.icon) + '" alt="" loading="lazy" onerror="this.remove()">' : '') +
+               '</a>';
+      }).join('');
+      return html + html;      // doubled so the loop is seamless
+    }
+
+    var per = Math.min(10, games.length);
+    document.getElementById('track-l').innerHTML = column(pick(0, per));
+    document.getElementById('track-r').innerHTML = column(pick(Math.floor(games.length / 2), per));
+
+    /* ---- stat chips ---- */
+    return window.Plays.top(500).then(function (rows) {
+      var plays = (rows || []).reduce(function (a, r) { return a + (r.count || 0); }, 0);
+      var bits = ['<span class="stat"><b>' + games.length + '</b> Games</span>'];
+      if (plays) bits.push('<span class="stat"><b>' + plays.toLocaleString() + '</b> Plays</span>');
+      bits.push('<span class="stat">Free · No Downloads</span>');
+      var el = document.getElementById('stats');
+      el.innerHTML = bits.join('');
+      requestAnimationFrame(function () { el.classList.add('in'); });
+    });
+  }).catch(function () { /* no game list yet — hero still works on its own */ });
+})();
 </script>
 </body>
 </html>
