@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Games — Hotdog Party</title>
+<meta name="description" content="Browse every game on Hotdog Party." />
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  .page { max-width:1500px; }
+
+  .layout {
+    display:grid; gap:clamp(1.2rem,2.5vw,2.2rem);
+    grid-template-columns:minmax(0,1fr) 290px;
+    align-items:start;
+  }
+  @media (max-width:1080px){ .layout { grid-template-columns:minmax(0,1fr); } }
+
+  .toolbar {
+    display:flex; align-items:center; gap:1rem; flex-wrap:wrap;
+    margin-bottom:1.2rem;
+  }
+  .search {
+    flex:1; min-width:200px; max-width:340px;
+    display:flex; align-items:center; gap:.6rem;
+    padding:.62rem 1rem; border-radius:100px;
+    border:1px solid var(--line); background:rgba(255,255,255,.04);
+  }
+  .search input {
+    flex:1; border:0; background:transparent; outline:none;
+    color:var(--text); font-family:inherit; font-size:.85rem;
+  }
+  .search input::placeholder { color:var(--dim); }
+  .count { font-size:.72rem; letter-spacing:.18em; text-transform:uppercase; color:var(--dim); }
+
+  /* ---------- 6-across logo grid ---------- */
+  .grid {
+    display:grid;
+    grid-template-columns:repeat(6, minmax(0,1fr));
+    gap:clamp(.6rem, 1.1vw, 1rem);
+  }
+  @media (max-width:1400px){ .grid { grid-template-columns:repeat(5, minmax(0,1fr)); } }
+  @media (max-width:1080px){ .grid { grid-template-columns:repeat(6, minmax(0,1fr)); } }
+  @media (max-width:900px) { .grid { grid-template-columns:repeat(4, minmax(0,1fr)); } }
+  @media (max-width:620px) { .grid { grid-template-columns:repeat(3, minmax(0,1fr)); } }
+  @media (max-width:420px) { .grid { grid-template-columns:repeat(2, minmax(0,1fr)); } }
+
+  .tile {
+    position:relative; display:block; aspect-ratio:1;
+    border-radius:14px; overflow:hidden;
+    border:1px solid var(--line); background:#1d1d1d;
+    text-decoration:none; color:var(--text);
+    transition:transform .26s cubic-bezier(.2,.8,.3,1), border-color .26s, box-shadow .26s;
+  }
+  .tile:hover, .tile:focus-visible {
+    transform:translateY(-4px);
+    border-color:color-mix(in srgb, var(--accent) 65%, transparent);
+    box-shadow:0 14px 30px rgba(0,0,0,.5);
+    outline:none;
+  }
+  .tile-art { position:absolute; inset:0; }
+  .tile-art img { transition:transform .4s cubic-bezier(.2,.8,.3,1), filter .3s; }
+  .tile:hover .tile-art img, .tile:focus-visible .tile-art img { transform:scale(1.08); filter:brightness(.42) saturate(.85); }
+  .tile .thumb-fallback { font-size:1.4rem; }
+
+  /* name panel — hidden until hover */
+  .tile-name {
+    position:absolute; inset:auto 0 0 0; z-index:2;
+    padding:1.4rem .5rem .6rem;
+    background:linear-gradient(transparent, rgba(8,8,8,.55) 35%, rgba(8,8,8,.94));
+    font-size:.78rem; font-weight:700; line-height:1.25; text-align:center;
+    opacity:0; transform:translateY(8px);
+    transition:opacity .24s, transform .24s;
+  }
+  .tile:hover .tile-name, .tile:focus-visible .tile-name { opacity:1; transform:none; }
+
+  .tile-2p {
+    position:absolute; top:.4rem; right:.4rem; z-index:3;
+    padding:.14rem .42rem; border-radius:100px;
+    background:rgba(10,10,10,.72); border:1px solid rgba(255,255,255,.18);
+    font-size:.58rem; font-weight:900; letter-spacing:.1em; color:#fff;
+    backdrop-filter:blur(4px);
+  }
+
+  /* touch devices can't hover — keep the name visible there */
+  @media (hover:none) {
+    .tile-name { opacity:1; transform:none; }
+  }
+
+  .empty {
+    grid-column:1/-1; padding:3rem 1rem; text-align:center;
+    color:var(--dim); font-weight:300; line-height:1.8;
+  }
+  .empty code {
+    font-family:ui-monospace, SFMono-Regular, Menlo, monospace; font-size:.82rem;
+    color:var(--accent-soft); background:rgba(255,255,255,.06);
+    padding:.16em .45em; border-radius:6px;
+  }
+
+  /* ---------- most played rail ---------- */
+  .rail { position:sticky; top:5.5rem; }
+  .rail-head {
+    display:flex; align-items:baseline; justify-content:space-between; gap:.5rem;
+    margin-bottom:.9rem;
+  }
+  .rail-head h2 {
+    font-size:.8rem; font-weight:900; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--accent);
+  }
+  .rail-head span { font-size:.62rem; letter-spacing:.14em; text-transform:uppercase; color:var(--dim); }
+
+  .rail-box {
+    border:1px solid var(--line); border-radius:18px; overflow:hidden;
+    background:linear-gradient(160deg, rgba(32,32,32,.9), rgba(23,23,23,.84));
+    backdrop-filter:blur(10px);
+  }
+  .rank {
+    display:flex; align-items:center; gap:.75rem;
+    padding:.55rem .8rem; border-bottom:1px solid var(--line);
+    text-decoration:none; color:var(--text); transition:background .2s;
+  }
+  .rank:last-child { border-bottom:0; }
+  .rank:hover { background:rgba(255,255,255,.05); }
+  .rank .n { width:1.2rem; flex:none; text-align:center; font-size:.8rem; font-weight:900; color:var(--dim); }
+  .rank:nth-child(1) .n { color:var(--accent); }
+  .rank .thumb { width:38px; height:38px; flex:none; border-radius:9px; border:1px solid var(--line); }
+  .rank .who { min-width:0; flex:1; }
+  .rank .nm { display:block; font-size:.84rem; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .rank .ct { display:block; font-size:.67rem; color:var(--dim); letter-spacing:.05em; margin-top:.1rem; }
+
+  .rail-empty { padding:1.5rem 1.1rem; text-align:center; color:var(--dim); font-size:.8rem; font-weight:300; line-height:1.7; }
+  .rail-note { margin-top:.7rem; text-shadow:0 1px 6px rgba(0,0,0,.9); font-size:.64rem; color:var(--dim); letter-spacing:.1em; text-transform:uppercase; text-align:center; }
+
+  @media (max-width:1080px){ .rail { position:static; } }
+</style>
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div class="vignette heavy"></div>
+
+<nav class="nav">
+  <a class="nav-logo" href="index.html">Hotdog Party</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="games.html" class="active">Games</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="page">
+  <header class="page-head">
+    <p class="eyebrow">The Arcade</p>
+    <h1 class="display">All Games</h1>
+    <p>Pick something and play. Everything here runs straight in your browser — no downloads, no installs, no accounts.</p>
+  </header>
+
+  <div class="layout">
+    <div>
+      <div class="toolbar">
+        <label class="search">
+          <span aria-hidden="true">🔎</span>
+          <input id="q" type="search" placeholder="Search games…" autocomplete="off">
+        </label>
+        <span class="count" id="count"></span>
+      </div>
+      <div class="grid" id="grid">
+        <div class="empty">Loading games…</div>
+      </div>
+    </div>
+
+    <aside class="rail">
+      <div class="rail-head">
+        <h2>🔥 Most Played</h2>
+        <span>Top 10</span>
+      </div>
+      <div class="rail-box" id="rail">
+        <div class="rail-empty">Loading…</div>
+      </div>
+      <p class="rail-note" id="rail-note"></p>
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <span>© <span id="yr"></span> Hotdog Party</span>
+  <span><a href="index.html">Home</a> · <a href="games.html">Games</a> · <a href="contact.html">Contact</a></span>
+</footer>
+
+<script src="assets/gamedata.js"></script>
+<script src="assets/firebase-config.js"></script>
+<script src="assets/plays.bundle.js"></script>
+<script src="assets/hotdog.bundle.js"></script>
+<script>
+(function () {
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  window.mountHotdog({ canvas: document.getElementById('bg-canvas'), mode: 'ambient' });
+
+  var grid  = document.getElementById('grid');
+  var count = document.getElementById('count');
+  var box   = document.getElementById('rail');
+  var note  = document.getElementById('rail-note');
+  var all   = [];
+
+  function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+  function tile(g) {
+    var two = (g.tags || []).indexOf('multiplayer') > -1 ? '<span class="tile-2p">2P</span>' : '';
+    return '<a class="tile" href="game.html?g=' + encodeURIComponent(g.slug) + '" title="' + esc(g.title) + '">' +
+             two +
+             window.GameData.thumb(g, 'tile-art') +
+             '<span class="tile-name">' + esc(g.title) + '</span>' +
+           '</a>';
+  }
+
+  function draw(list) {
+    grid.innerHTML = list.length
+      ? list.map(tile).join('')
+      : '<div class="empty">No games matched.</div>';
+    count.textContent = list.length + (list.length === 1 ? ' game' : ' games');
+  }
+
+  window.GameData.load().then(function (games) {
+    all = games;
+
+    if (!all.length) {
+      grid.innerHTML = '<div class="empty">No games found.<br>' +
+        'Add a <code>games.json</code> to the site root — a list of ' +
+        '<code>{ "name", "path", "icon" }</code> entries.</div>';
+      count.textContent = '';
+    } else {
+      draw(all);
+    }
+
+    document.getElementById('q').addEventListener('input', function (e) {
+      var q = e.target.value.trim().toLowerCase();
+      draw(!q ? all : all.filter(function (g) { return g.title.toLowerCase().indexOf(q) > -1; }));
+    });
+
+    /* ---- most played, top 10 ---- */
+    return window.Plays.top(10).then(function (rows) {
+      rows = (rows || []).filter(function (r) { return r && r.count > 0; });
+
+      if (!rows.length) {
+        box.innerHTML = '<div class="rail-empty">No plays counted yet.<br>Play a game for 10 seconds and it shows up here.</div>';
+      } else {
+        box.innerHTML = rows.map(function (r, i) {
+          var g = window.GameData.find(all, r.slug) || { slug:r.slug, title:r.title || r.slug, icon:'' };
+          return '<a class="rank" href="game.html?g=' + encodeURIComponent(g.slug) + '">' +
+                   '<span class="n">' + (i + 1) + '</span>' +
+                   window.GameData.thumb(g) +
+                   '<span class="who">' +
+                     '<span class="nm">' + esc(g.title) + '</span>' +
+                     '<span class="ct">' + r.count.toLocaleString() + ' play' + (r.count === 1 ? '' : 's') + '</span>' +
+                   '</span>' +
+                 '</a>';
+        }).join('');
+      }
+      note.textContent = window.Plays.source() === 'firebase' ? 'Live from Firebase' : 'Counting locally';
+    });
+  }).catch(function (err) {
+    grid.innerHTML = '<div class="empty">Could not load the game list.<br>' + esc(err.message) + '</div>';
+  });
+})();
+</script>
+</body>
+</html>
