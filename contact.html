@@ -19,11 +19,12 @@
   .info {
     padding:1.8rem 1.6rem;
     border:1px solid var(--line); border-radius:18px;
-    background:linear-gradient(160deg, rgba(255,255,255,.05), rgba(255,255,255,.015));
+    background:linear-gradient(160deg, rgba(32,32,32,.9), rgba(23,23,23,.84));
     backdrop-filter:blur(10px);
     transition:border-color .28s, transform .28s;
   }
   .info:hover { border-color:color-mix(in srgb, var(--accent) 45%, transparent); transform:translateY(-4px); }
+  a.info { display:block; text-decoration:none; color:inherit; }
   .info .ico {
     display:grid; place-items:center; width:48px; height:48px; margin-bottom:1.1rem;
     border-radius:13px; font-size:1.4rem;
@@ -35,8 +36,8 @@
     color:var(--dim); font-weight:700; margin-bottom:.6rem;
   }
   .info .val { font-size:1.05rem; font-weight:700; margin-bottom:.4rem; word-break:break-word; }
-  .info .val a { color:var(--accent); text-decoration:none; }
-  .info .val a:hover { text-decoration:underline; }
+  .info .val .link { color:var(--accent); }
+  a.info:hover .val .link { text-decoration:underline; }
   .info p { font-size:.85rem; font-weight:300; color:var(--muted); line-height:1.6; }
 
   .note {
@@ -73,24 +74,24 @@
   </header>
 
   <div class="info-grid">
-    <div class="info">
+    <a class="info" href="https://docs.google.com/forms/d/e/1FAIpQLSfYiXKpJ7o2cjKgrCvz6uNZ_lulE3e90rBCsKrtCXt4oQ1qoA/viewform" target="_blank" rel="noopener">
       <div class="ico">🐛</div>
       <h3>Report a Bug</h3>
-      <div class="val"><a href="mailto:hello@hotdogparty.example?subject=Bug%20report">Send a bug report</a></div>
-      <p>Tell us which game, what happened, and what browser you were using.</p>
-    </div>
+      <div class="val"><span class="link">Send a bug report ↗</span></div>
+      <p>Fill in the form and tell us which game, what happened, and what browser you were using.</p>
+    </a>
 
-    <div class="info">
+    <a class="info" href="https://forms.gle/dQAR5HEzJ5MpRYz49" target="_blank" rel="noopener">
       <div class="ico">🎮</div>
       <h3>Submit a Game</h3>
-      <div class="val"><a href="mailto:hello@hotdogparty.example?subject=Game%20submission">Pitch your game</a></div>
-      <p>Made something fun? Send us a link and we'll take a look at adding it to the arcade.</p>
-    </div>
+      <div class="val"><span class="link">Pitch your game ↗</span></div>
+      <p>Made something fun? Send it through the form and we'll take a look at adding it to the arcade.</p>
+    </a>
   </div>
 
   <div class="note">
     <h3>Before you write in</h3>
-    <p>Every game here runs in the browser, so most problems are fixed by refreshing the page or trying a different browser. If a game still won't load after that, send us the game's name and we'll get on it.</p>
+    <p>Every game here runs in the browser, so most problems are fixed by refreshing the page or trying a different browser. If a game still won't load after that, send a bug report with the game's name and we'll get on it.</p>
   </div>
 </main>
 

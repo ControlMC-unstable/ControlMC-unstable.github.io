@@ -42,7 +42,7 @@ a { color:inherit; }
 }
 .vignette.heavy {
   background:radial-gradient(ellipse 85% 75% at 50% 40%,
-    rgba(20,20,20,.66) 0%, rgba(17,17,17,.9) 55%, rgba(15,15,15,.98) 100%);
+    rgba(20,20,20,.42) 0%, rgba(17,17,17,.72) 55%, rgba(15,15,15,.93) 100%);
 }
 
 /* ---------- nav ---------- */

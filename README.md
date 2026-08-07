@@ -101,6 +101,11 @@ image never leaves a blank square.
 hidden until you hover (always visible on touch screens, which can't hover).
 There's a search box, and a Most Played top 10 down the right side.
 
+**contact.html** — two cards, both linking straight to your Google Forms: the
+bug report form and the game submission form. Both open in a new tab. To
+change them, edit the `href` on the two `a.info` cards (and the
+`btn-report` handler in `game.html`, which opens the bug form too).
+
 **game.html** — the player. `game.html?g=snow-rider` — the slug comes from the
 game's name automatically. Toolbar has Back, the game's logo and name, the
 play timer, restart, report, and fullscreen. Quick Play sits alongside,
@@ -195,7 +200,10 @@ needs `npm install` first.
 
 ## Notes
 
-- The hotdog responds to drag (spin) and scroll (zoom) on the home page.
+- The hotdog responds to drag (spin) and scroll (zoom) on the home page, and
+  spins in the background on the games, game, and contact pages.
+- The browser-tab icon comes from `favicon.png` in the site root. Every page
+  links to it; swap that file to change the icon everywhere.
 - Every page is responsive: the grid steps 6 → 5 → 4 → 3 → 2 across as the
   screen narrows.
 - Some sites block being embedded in a frame. If a game works in its own tab

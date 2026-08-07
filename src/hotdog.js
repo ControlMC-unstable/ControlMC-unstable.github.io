@@ -30,7 +30,7 @@ export function mountHotdog({
   renderer.setClearColor(0x141414);
   renderer.outputColorSpace    = THREE.SRGBColorSpace;
   renderer.toneMapping         = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = ambientMode ? exposure * 0.5 : exposure;
+  renderer.toneMappingExposure = ambientMode ? exposure * 0.92 : exposure;
 
   const scene  = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(38, innerWidth/innerHeight, 0.1, 100);
@@ -200,10 +200,10 @@ export function mountHotdog({
   hotdog.add(condiment({ color:0xd42112, amp:0.15, freq:9, phase:Math.PI*0.9,   lift:0.05, radius:0.040, span:[0.11,0.89] }));
 
   hotdog.rotation.set(0.42, 0, 0.30);
-  hotdog.scale.setScalar(ambientMode ? 1.0 : 1.15);
+  hotdog.scale.setScalar(ambientMode ? 1.1 : 1.15);
   // In ambient mode it sits deep in the scene and off to one side, so page
   // copy stays readable on top of it.
-  if (ambientMode) { hotdog.position.x = 2.3; hotdog.position.z = -6.0; }
+  if (ambientMode) { hotdog.position.x = 2.5; hotdog.position.z = -3.2; }
   scene.add(hotdog);
 
   /* ---------- responsive framing ---------- */
@@ -216,7 +216,7 @@ export function mountHotdog({
     const needed = (tall ? 5.4 : 6.6) / (2*Math.tan(HALF_FOV)*aspect);
     baseZ = Math.min(21, Math.max(9.2, needed));
     camera.position.z = baseZ + zoom;
-    HOTDOG_Y = ambientMode ? -1.5 : -(tall ? 0.46 : 0.56) * baseZ * Math.tan(HALF_FOV);
+    HOTDOG_Y = ambientMode ? -1.15 : -(tall ? 0.46 : 0.56) * baseZ * Math.tan(HALF_FOV);
   }
   frame();
 

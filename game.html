@@ -168,7 +168,7 @@
           <span id="timer-label">Play for 10s</span>
         </span>
         <button class="icon-btn" id="btn-reload" title="Restart game" aria-label="Restart game">⟳</button>
-        <button class="icon-btn flag" id="btn-report" title="Report a problem" aria-label="Report a problem">⚑</button>
+        <button class="icon-btn flag" id="btn-report" title="Report a problem with this game" aria-label="Report a problem with this game">⚑</button>
         <button class="icon-btn" id="btn-full" title="Fullscreen" aria-label="Fullscreen">⛶</button>
       </div>
     </div>
@@ -286,9 +286,7 @@
     };
 
     document.getElementById('btn-report').onclick = function () {
-      location.href = 'mailto:hello@hotdogparty.example'
-        + '?subject=' + encodeURIComponent('Problem with ' + game.title)
-        + '&body='    + encodeURIComponent('What went wrong:\n\n\nGame: ' + game.title + ' (' + game.slug + ')');
+      window.open('https://docs.google.com/forms/d/e/1FAIpQLSfYiXKpJ7o2cjKgrCvz6uNZ_lulE3e90rBCsKrtCXt4oQ1qoA/viewform', '_blank', 'noopener');
     };
 
     /* ---- bank a play after 10 seconds on the page ---- */
