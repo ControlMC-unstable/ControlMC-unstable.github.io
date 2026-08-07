@@ -1,0 +1,16 @@
+{
+  "name": "hotdog-party",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hotdog Party — static game site with a 3D hotdog",
+  "scripts": {
+    "build": "npm run build:hotdog && npm run build:plays",
+    "build:hotdog": "esbuild src/hotdog-entry.js --bundle --minify --format=iife --target=es2019 --outfile=assets/hotdog.bundle.js",
+    "build:plays": "esbuild src/plays.js --bundle --minify --format=iife --target=es2019 --outfile=assets/plays.bundle.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "firebase": "^11.0.0",
+    "three": "^0.163.0"
+  }
+}
